@@ -1,0 +1,55 @@
+/* variaveis css */
+
+:root {
+  --preto: #141414;
+  --vermenho: #e50914;
+  --branco: #ffffff;
+}
+
+/* reset css */
+
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  box-sizing: border-box;
+  background-color: var(--preto);
+  color: var(--branco);
+  font-family: "Times New Roman", Times, serif;
+}
+
+.container {
+  margin: 20px 40px 0px 40px;
+}
+
+/* logo */
+
+header .container .logo {
+  color: var(--vermenho);
+  font-size: 30px;
+}
+
+/* menu */
+
+header .container,
+header .container-direito {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+header .container-direito .menu {
+  margin-left: 20px;
+}
+
+header .menu-item {
+  margin: 0 10px;
+  padding: 5px; /* mais fácil para clicar */
+  font-size: 16px;
+  font-family: "Times New Roman", Times, serif;
+}
+
+header .menu-item:hover {
+  color: #bbbbbb;
+}
