@@ -53,3 +53,19 @@ header .menu-item {
 header .menu-item:hover {
   color: #bbbbbb;
 }
+
+header .menu-imagem-perfil {
+  width: 30px;
+  height: 30px;
+  border-radius: 2px;
+  margin-right: 3px;
+}
+
+header .menu-item .fas,
+header .menu-item #input-busca {
+  font-size: 18px;
+}
+
+header .menu-item #input-busca {
+  display: none;
+}

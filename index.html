@@ -4,10 +4,19 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
     <link rel="shortcut icon" href="img/favicon/favicon.ico" type="image/x-icon">
+
+    <!-- Estilo css-->
     <link rel="stylesheet" href="style/main.css">
+
+    <!-- Font Awesome js-->
+    <script defer src="https://kit.fontawesome.com/d82eae9f56.js" crossorigin="anonymous"></script>
+
+    <!-- Outros js-->
+    <script src="js/main.js"></script>
+
     <title>MercadoFlix</title>
+
 </head>
 <body>
     <header>
@@ -27,14 +36,22 @@
             
             <div class="container-esquerdo">
                 <nav  class="menu-esquerdo">
-                    <a class="menu-item" href="#">I</a>
-                    <a class="menu-item" href="#">I</a>
-                    <a class="menu-item" href="#">I</a>
+                    <a class="menu-item" href="#">
+                        <input type="text" name="input-busca" id="input-busca" placeholder="Açoes, contratos, títulos...">
+                        <i class="fas fa-search"  onclick="mostrarBusca()"></i>
+                    </a>
+                    <a class="menu-item" href="#">
+                        <i class="fas fa-bell"></i>
+                    </a>
+                    <a class="menu-item" href="#">
+                        <img class="menu-imagem-perfil" src="img/profile/profile.jpg" alt="">
+                        <i class="fas fa-angle-down"></i>
+                    </a>
                 </nav>
             </div>
         
         </div>
     </header>
-    
+
 </body>
 </html>
