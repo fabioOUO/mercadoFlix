@@ -13,7 +13,7 @@
     <script defer src="https://kit.fontawesome.com/d82eae9f56.js" crossorigin="anonymous"></script>
 
     <!-- Outros js-->
-    <script src="js/main.js"></script>
+    <script defer src="js/main.js"></script>
 
     <title>MercadoFlix</title>
 
@@ -35,15 +35,15 @@
             </div>
             
             <div class="container-esquerdo">
-                <nav  class="menu-esquerdo">
+                <nav  class="menu">
                     <a class="menu-item" href="#">
-                        <input type="text" name="input-busca" id="input-busca" placeholder="Açoes, contratos, títulos...">
-                        <i class="fas fa-search"  onclick="mostrarBusca()"></i>
+                        <input class="ocultar" type="text" name="input-busca" id="input-busca" placeholder="Açoes, contratos, títulos...">
+                        <i id="icone-busca" class="fas fa-search"></i>
                     </a>
                     <a class="menu-item" href="#">
-                        <i class="fas fa-bell"></i>
+                        <i class="fas fa-bell" onclick="sem_notificacoes()"></i>
                     </a>
-                    <a class="menu-item" href="#">
+                    <a class="menu-item" href="#" onclick="sem_dados()">
                         <img class="menu-imagem-perfil" src="img/profile/profile.jpg" alt="">
                         <i class="fas fa-angle-down"></i>
                     </a>
@@ -52,6 +52,34 @@
         
         </div>
     </header>
+
+    <main>
+        <section>
+            <div class="container">
+                <div class="noticia-principal">
+                    <h3 class="noticia-titulo">
+                        Bitcoin pode cair mais 40% se perder importante suporte
+                    </h3>
+       
+                    <div class="noticia-descricao">
+                        O preço do Bitcoin (BTC) opera em queda de 2,37% nesta segunda-feira (21). Contudo, a criptomoeda pode cair mais 38% se perder o suporte dos US$ 32 mil. É o que afirma Michaël van de Poppe em seu vídeo mais recente, além do trader brasileiro Wellington Silva, que conversou com o CriptoFácil a respeito deste momento.    
+                    </div>
+                    
+                    <div class="botoes">
+                        <button class="botao" role="button" onmouseout="setColorIcon(this, 'fas fa-play cor-branca-icon')" onmouseover="setColorIcon(this, 'fas fa-play cor-preta-icon')" >
+                            <i class="fas fa-play"></i>
+                            MAIS INFOMAÇÕES
+                        </button>
+                        <button class="botao" role="button" onmouseout="setColorIcon(this, 'fas fa-info-circle cor-branca-icon')" onmouseover="setColorIcon(this, 'fas fa-info-circle cor-preta-icon')">
+                            <i class="fas fa-info-circle"></i>
+                            SALVAR
+                        </button> 
+                    </div>
+
+                </div>
+            </div>
+        </section>
+    </main>
 
 </body>
 </html>
