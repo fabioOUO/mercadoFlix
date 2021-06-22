@@ -30,6 +30,7 @@ body {
 header .container .logo {
   color: var(--vermenho);
   font-size: 30px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
 }
 
 /* menu */
@@ -105,22 +106,22 @@ main .noticia-principal {
   padding-left: 30px;
 }
 
-main .noticia-titulo {
+main .titulo {
   font-family: "Courier New", Courier, monospace;
   font-size: 20px;
   margin-bottom: 20px;
-  margin-left: 20px;
+  margin-left: 30px;
 }
 
 main .noticia-descricao {
   font-family: Arial, Helvetica, sans-serif;
-  width: 60%;
+  width: 50%;
   font-size: 16px;
 }
 
 /* botoes*/
 
-.noticia-botoes {
+main .noticia-botoes {
   display: flex;
   flex-direction: row;
 }
@@ -154,4 +155,47 @@ main .botao .cor-preta-icon {
 }
 main .botao .cor-branca-icon {
   color: #ffffff;
+}
+
+/* outros conponentes */
+
+.calendario,
+.cotacoes .forex,
+.sites {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.calendario {
+  height: 1500px;
+}
+
+.cotacoes .forex {
+  height: 350px;
+}
+.sites {
+  height: 100%;
+}
+
+.calendario .titulo,
+.cotacoes .titulo,
+.sites .titulo {
+  color: var(--branco);
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 25px;
+  font-family: "Courier New", Courier, monospace;
+}
+
+.cotacoes .sub-titulo {
+  color: var(--branco);
+  text-align: center;
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+.tradingview-widget-container {
+  background-color: var(--branco);
 }

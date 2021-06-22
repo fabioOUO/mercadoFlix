@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../img/favicon/favicon.ico" type="image/x-icon">
+
+    <!-- Estilo css-->
+    <link rel="stylesheet" href="../style/main.css">
+
+    <!-- Font Awesome js-->
+    <script defer src="https://kit.fontawesome.com/d82eae9f56.js" crossorigin="anonymous"></script>
+
+    <!-- Outros js-->
+    <script defer src="../js/main.js"></script>
+
+    <title>MercadoFlix</title>
+
+</head>
+<body>
+    <header>
+        <div class="container">
+            
+            <div class="container-direito">
+                <div class="logo">
+                    MercadoFlix
+                </div>
+                <nav  class="menu">
+                    <a class="menu-item" href="../index.html">Home</a>
+                    <a class="menu-item" href="calendar.html">Agenda</a>
+                    <a class="menu-item" href="sites.html">Sites Econômicos</a>
+                    <a class="menu-item" href="cotacoes.html">Cotações</a>
+                </nav>
+            </div>
+            
+            <div class="container-esquerdo">
+                <nav  class="menu">
+                    <a class="menu-item" href="#">
+                        <input class="ocultar" type="text" name="input-busca" id="input-busca" placeholder="Açoes, contratos, títulos...">
+                        <i id="icone-busca" class="fas fa-search"></i>
+                    </a>
+                    <a class="menu-item" href="#">
+                        <i class="fas fa-bell" onclick="sem_notificacoes()"></i>
+                    </a>
+                    <a class="menu-item" href="#" onclick="sem_dados()">
+                        <img class="menu-imagem-perfil" src="../img/profile/profile.jpg" alt="">
+                        <i class="fas fa-angle-down"></i>
+                    </a>
+                </nav>
+            </div>
+        
+        </div>
+    </header>
+
+    <main>
+        <div class="container">
+            <div class="sites">
+                <h3 class="titulo">Sites Econômcos</h3>
+                <table class="sites-tabela">
+                    
+                </table>
+           </div>
+        </div>
+    </main>
+
+</body>
+</html>
