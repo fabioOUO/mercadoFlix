@@ -45,7 +45,41 @@ header .container-esquerdo {
 .container-forex,
 .container-criptomoeda {
   width: 100%;
-  height: 1600px;
+}
+.container-acoes,
+.container-forex {
+  height: 850px;
+}
+.container-acoes {
+  height: 810px;
+}
+
+.container-indices {
+  height: 740px;
+}
+.container-commodities {
+  height: 1580px;
+}
+.container-criptomoeda {
+  height: 1360px;
+}
+
+/* owl graficos */
+
+.container-graficos {
+  height: 350px;
+  width: 100%;
+  margin: 20px 0px;
+}
+
+.container-graficos .item {
+  margin: 1px;
+  width: 300px;
+  height: 200px;
+}
+
+.container-graficos .titulo {
+  text-align: center;
 }
 
 /* logo */
@@ -97,12 +131,12 @@ header .menu-item #input-busca {
   justify-content: center;
   margin-top: 40px;
   margin-bottom: 30px;
-  background-color: rgb(256, 256, 256);
+  background-color: rgba(256, 256, 256, 0.5);
 }
 
 .cotacoes .menu .menu-item {
   margin: 5px 0px;
-  padding: 5px 20px;
+  padding: 5px 40px;
   background-color: var(--branco);
   color: var(--preto);
   border-radius: 2px;
@@ -111,8 +145,8 @@ header .menu-item #input-busca {
 }
 
 .cotacoes .menu .menu-item:hover {
-  background-color: rgba(50, 50, 255, 0.5);
-  color: var(--branco);
+  background-color: rgba(0, 0, 0, 0.75);
+  color: rgb(255, 255, 255);
   cursor: pointer;
   transition: 0.3s ease all;
 }
@@ -138,7 +172,7 @@ header .menu-item #input-busca {
   flex-direction: column;
   justify-content: center;
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) 100%),
-    url("../img/news/main.jpg");
+    url("../img/news/main.jpeg");
   background-size: cover;
   height: 500px;
 }
@@ -170,7 +204,12 @@ main .noticia-botoes {
 main .botao {
   margin: 20px 20px 10px;
   padding: 15px 10px;
-  background-color: rgba(50, 50, 50, 0.5); /* deixa com um preto transparente */
+  background-color: rgba(
+    200,
+    100,
+    100,
+    0.5
+  ); /* deixa com um preto transparente */
   border: none;
   border-radius: 3px;
   color: var(--branco);
