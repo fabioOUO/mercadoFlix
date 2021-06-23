@@ -1,0 +1,65 @@
+/* container cotação */
+
+.container-acoes,
+.container-indices,
+.container-commodities,
+.container-forex,
+.container-criptomoeda {
+  width: 100%;
+}
+.container-acoes,
+.container-forex {
+  height: 850px;
+}
+.container-acoes {
+  height: 810px;
+}
+
+.container-indices {
+  height: 740px;
+}
+.container-commodities {
+  height: 1580px;
+}
+.container-criptomoeda {
+  height: 1360px;
+}
+
+/* titulo */
+
+.cotacoes .titulo {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 25px;
+  font-family: "Courier New", Courier, monospace;
+}
+
+/* menu de cotacoes*/
+
+.cotacoes .menu {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  margin-top: 40px;
+  margin-bottom: 30px;
+  background-color: rgba(256, 256, 256, 0.5);
+  width: 100%;
+}
+
+.cotacoes .menu .menu-item {
+  margin: 5px 0px;
+  padding: 5px 40px;
+  background-color: var(--branco);
+  color: var(--preto);
+  border-radius: 2px;
+  transition: 0.3s ease all;
+  border: 1px solid #000000;
+}
+
+.cotacoes .menu .menu-item:hover {
+  background-color: rgba(0, 0, 0, 0.75);
+  color: rgb(255, 255, 255);
+  cursor: pointer;
+  transition: 0.3s ease all;
+}
