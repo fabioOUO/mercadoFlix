@@ -21,8 +21,31 @@ body {
   background-color: var(--preto);
 }
 
+/* container */
+
 .container {
   margin: 20px 40px 0px 40px;
+}
+
+header .container,
+header .container-direito,
+header .container-esquerdo {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  background-color: var(--preto);
+}
+
+/* container cotação */
+
+.container-acoes,
+.container-indices,
+.container-commodities,
+.container-forex,
+.container-criptomoeda {
+  width: 100%;
+  height: 1600px;
 }
 
 /* logo */
@@ -34,16 +57,6 @@ header .container .logo {
 }
 
 /* menu */
-
-header .container,
-header .container-direito,
-header .container-esquerdo {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: space-between;
-  background-color: var(--preto);
-}
 
 header .menu {
   margin-bottom: 10px;
@@ -74,6 +87,34 @@ header .menu-imagem-perfil {
 header .menu-item .fas,
 header .menu-item #input-busca {
   font-size: 18px;
+}
+/* menu de cotacoes*/
+
+.cotacoes .menu {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  margin-top: 40px;
+  margin-bottom: 30px;
+  background-color: rgb(256, 256, 256);
+}
+
+.cotacoes .menu .menu-item {
+  margin: 5px 0px;
+  padding: 5px 20px;
+  background-color: var(--branco);
+  color: var(--preto);
+  border-radius: 2px;
+  transition: 0.3s ease all;
+  border: 1px solid #000000;
+}
+
+.cotacoes .menu .menu-item:hover {
+  background-color: rgba(50, 50, 255, 0.5);
+  color: var(--branco);
+  cursor: pointer;
+  transition: 0.3s ease all;
 }
 
 /* ocutar/mostrar input busca */
