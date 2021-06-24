@@ -5,8 +5,11 @@ $('.owl-carousel').owlCarousel({
     margin:10,
     nav:true,
     responsive:{
+        0:{
+            items:1
+        },
         320:{
-            items:2
+            items:1
         },
         640:{
             items:2

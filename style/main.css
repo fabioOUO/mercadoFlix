@@ -91,3 +91,27 @@ header .menu-item #input-busca {
 .mostrar {
   display: inline-block;
 }
+
+.rodape {
+  display: flex;
+  flex-direction: row;
+  background-color: rgb(50, 50, 50);
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  font-size: 14px;
+}
+.rodape .contato {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.rodape .contato p,
+.rodape .contato a {
+  color: rgb(180, 180, 180);
+}
+
+.rodape .contato a:hover {
+  color: var(--branco);
+}
